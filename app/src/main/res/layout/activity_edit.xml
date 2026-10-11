@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/root" android:orientation="vertical" android:background="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+        <ImageButton android:layout_width="48dp" android:layout_height="48dp" android:id="@+id/back" android:src="@drawable/ic_back" android:background="?android:attr/selectableItemBackgroundBorderless" android:contentDescription="Quay lại" android:padding="12dp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/title" android:text="Thêm liên hệ" android:textSize="18sp" android:textColor="#202124" android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingBottom="32dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thông tin liên hệ" android:textSize="26sp" android:textColor="#202124" android:textStyle="bold" android:layout_marginTop="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lưu những người quan trọng với bạn." android:textSize="14sp" android:textColor="#6B7280" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Họ và tên" android:textSize="14sp" android:textColor="#202124" android:layout_marginTop="16dp" />
+            <EditText android:layout_width="match_parent" android:layout_height="56dp" android:id="@+id/name" android:hint="Họ và tên" android:inputType="textPersonName" android:singleLine="true" android:background="@drawable/bg_field" android:paddingHorizontal="16dp" android:textSize="16sp" android:layout_marginTop="8dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số điện thoại" android:textSize="14sp" android:textColor="#202124" android:layout_marginTop="16dp" />
+            <EditText android:layout_width="match_parent" android:layout_height="56dp" android:id="@+id/phone" android:hint="Số điện thoại" android:inputType="phone" android:singleLine="true" android:background="@drawable/bg_field" android:paddingHorizontal="16dp" android:textSize="16sp" android:layout_marginTop="8dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Email (không bắt buộc)" android:textSize="14sp" android:textColor="#202124" android:layout_marginTop="16dp" />
+            <EditText android:layout_width="match_parent" android:layout_height="56dp" android:id="@+id/email" android:hint="Email (không bắt buộc)" android:inputType="textEmailAddress" android:singleLine="true" android:background="@drawable/bg_field" android:paddingHorizontal="16dp" android:textSize="16sp" android:layout_marginTop="8dp" />
+            <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/save" android:text="Lưu liên hệ" android:textAllCaps="false" android:textColor="#FFFFFF" android:background="@drawable/bg_primary" android:stateListAnimator="@null" android:layout_marginTop="16dp" android:backgroundTint="@null" app:backgroundTint="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
